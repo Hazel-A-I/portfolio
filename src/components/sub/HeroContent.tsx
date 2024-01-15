@@ -16,7 +16,7 @@ const HeroContent = () => (
 	<motion.div
 		initial="hidden"
 		animate="visible"
-		className="flex flex-row items-center justify-center px-[8rem] mt-[16rem] w-full z-[20]">
+		className="flex flex-row items-center justify-around px-[1.5rem] mt-[16rem] w-full z-[20]">
 		<div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
 			<motion.div
 				variants={slideInFromTop}
@@ -27,9 +27,10 @@ const HeroContent = () => (
 
 			<motion.div
 				variants={slideInFromLeft(0.5)}
-				className="flex flex-col gap-[2rem] mt-[2.4rem] text-[6rem] leading-none text-bold text-white max-w-[60rem] w-auto h-auto">
+				className="flex flex-col gap-[2rem] mt-[2.4rem] text-[6rem] leading-none font-bold text-white max-w-[60rem] w-auto h-auto">
+				<span className="font-extrabold">Hello! I&apos;m Hazel</span>
 				<span>
-					Creating awesome and
+					I create awesome and
 					<span className="colorful-span"> stylish </span>
 					projects
 				</span>
@@ -54,7 +55,7 @@ const HeroContent = () => (
 		</div>
 		<motion.div
 			variants={slideInFromRight(0.8)}
-			className="w-full h-full flex justify-center items-center">
+			className="w-full h-full flex justify-center items-center ml-[1.5rem]">
 			<Image
 				src="/placeholder.png"
 				alt="placeholder for later three.js"
