@@ -6,7 +6,7 @@ import React from "react";
 
 const Header = () => {
 	return (
-		<header className="w-full  h-[6.5rem] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417 backdrop-blur-md z-50 px-[4rem] ]">
+		<header className="w-full  h-[6.5rem] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-[4rem] ]">
 			<div className="w-full max-w-[144rem] h-full flex flex-row items-center justify-between m-auto px-[1rem]">
 				<a
 					href="#about-me"

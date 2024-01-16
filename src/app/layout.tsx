@@ -2,7 +2,6 @@
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { Cedarville_Cursive } from "next/font/google";
 import "./globals.scss";
 import StarCanvas from "@/components/main/StarBackground";
 import Header from "@/components/main/Header";
