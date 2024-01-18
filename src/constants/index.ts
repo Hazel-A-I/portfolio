@@ -146,3 +146,42 @@ export const Socials = [
 		link: "https://www.instagram.com/hazel_arcangelo/",
 	},
 ];
+
+export const Project_data = [
+	{
+		name: "Projeto teste 1",
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent laoreet massa non felis tempus convallis. Ut velit eros, imperdiet id suscipit accumsan, varius at sem. Aliquam nisl ligula, sagittis et odio in, dignissim tincidunt velit. Ut porttitor gravida faucibus. Maecenas quis urna sit amet diam lobortis egestas at vitae metus. In hac habitasse platea dictumst. Nam eget ipsum nec libero tincidunt eleifend. Morbi elementum lectus bibendum, mattis ipsum vel, condimentum nibh. Morbi ultrices, libero ac suscipit tincidunt, lorem nibh varius urna, id tempor nisl nunc id felis. Maecenas elementum leo in massa molestie pretium. Nulla facilisis sollicitudin eros, id interdum sapien cursus eu. Integer diam mi, scelerisque non porttitor ac, vestibulum vitae turpis.",
+		background_image:
+			"/depositphotos_31468817-stock-photo-coming-soon-sign.jpg",
+		link_repo: "#",
+		link_host: "#",
+		width: 40,
+		height: 40,
+		video_source: "/youtube_zb8d4edjbhA_720x720_h264.mp4",
+	},
+	{
+		name: "Projeto teste 1",
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent laoreet massa non felis tempus convallis. Ut velit eros, imperdiet id suscipit accumsan, varius at sem. Aliquam nisl ligula, sagittis et odio in, dignissim tincidunt velit. Ut porttitor gravida faucibus. Maecenas quis urna sit amet diam lobortis egestas at vitae metus. In hac habitasse platea dictumst. Nam eget ipsum nec libero tincidunt eleifend. Morbi elementum lectus bibendum, mattis ipsum vel, condimentum nibh. Morbi ultrices, libero ac suscipit tincidunt, lorem nibh varius urna, id tempor nisl nunc id felis. Maecenas elementum leo in massa molestie pretium. Nulla facilisis sollicitudin eros, id interdum sapien cursus eu. Integer diam mi, scelerisque non porttitor ac, vestibulum vitae turpis.",
+		background_image:
+			"/depositphotos_31468817-stock-photo-coming-soon-sign.jpg",
+		link_repo: "#",
+		link_host: "#",
+		width: 40,
+		height: 40,
+		video_source: "/youtube_zb8d4edjbhA_720x720_h264.mp4",
+	},
+	{
+		name: "Projeto teste 1",
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent laoreet massa non felis tempus convallis. Ut velit eros, imperdiet id suscipit accumsan, varius at sem. Aliquam nisl ligula, sagittis et odio in, dignissim tincidunt velit. Ut porttitor gravida faucibus. Maecenas quis urna sit amet diam lobortis egestas at vitae metus. In hac habitasse platea dictumst. Nam eget ipsum nec libero tincidunt eleifend. Morbi elementum lectus bibendum, mattis ipsum vel, condimentum nibh. Morbi ultrices, libero ac suscipit tincidunt, lorem nibh varius urna, id tempor nisl nunc id felis. Maecenas elementum leo in massa molestie pretium. Nulla facilisis sollicitudin eros, id interdum sapien cursus eu. Integer diam mi, scelerisque non porttitor ac, vestibulum vitae turpis.",
+		background_image:
+			"/depositphotos_31468817-stock-photo-coming-soon-sign.jpg",
+		link_repo: "#",
+		link_host: "#",
+		width: 40,
+		height: 40,
+		video_source: "/youtube_zb8d4edjbhA_720x720_h264.mp4",
+	},
+];

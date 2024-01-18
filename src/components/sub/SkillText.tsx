@@ -30,7 +30,7 @@ const SkillText = () => {
 			<motion.div
 				variants={slideInFromRight(0.5)}
 				className="cursive text-[2.4rem] text-gray-200 mb-[2.5rem] mt-[1rem] text-center">
-				And adopting to your team necessities
+				And adapting to your team necessities
 			</motion.div>
 		</div>
 	);
