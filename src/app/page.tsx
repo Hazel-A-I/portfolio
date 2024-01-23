@@ -11,7 +11,6 @@ export default function Home() {
 		<main className="h-full w-full max-w-[144rem] mx-auto">
 			<div className="flex flex-col  gap-[8rem] ">
 				<Hero />
-
 				<Skills />
 				<Projects />
 			</div>

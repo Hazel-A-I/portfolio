@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 import "./globals.scss";
 import StarCanvas from "@/components/main/StarBackground";
 import Header from "@/components/main/Header";
+import Footer from "@/components/main/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -23,6 +24,8 @@ export default function RootLayout({
 				<Header />
 				<StarCanvas />
 				{children}
+
+				<Footer />
 			</body>
 		</html>
 	);

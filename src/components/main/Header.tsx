@@ -6,7 +6,7 @@ import React from "react";
 
 const Header = () => {
 	return (
-		<header className="w-full  h-[6.5rem] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-[4rem] ]">
+		<header className="w-full  h-[6.5rem] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-[51] px-[4rem] ]">
 			<div className="w-full max-w-[144rem] h-full flex flex-row items-center justify-between m-auto px-[1rem]">
 				<a
 					href="#about-me"
@@ -24,17 +24,22 @@ const Header = () => {
 						<a
 							href="#about-me"
 							className="cursor-pointer text-[1.6rem] hover:text-zinc-400 active:text-zinc-500 transition">
-							About me
+							Sobre mim
 						</a>
 						<a
 							href="#skills"
 							className="cursor-pointer text-[1.6rem] hover:text-zinc-400 active:text-zinc-500 transition">
-							Skills
+							Competências
 						</a>
 						<a
 							href="#projects"
 							className="cursor-pointer text-[1.6rem] hover:text-zinc-400 active:text-zinc-500 transition">
-							Projects
+							Projetos
+						</a>
+						<a
+							href="#experience"
+							className="cursor-pointer text-[1.6rem] hover:text-zinc-400 active:text-zinc-500 transition">
+							Experiências
 						</a>
 					</div>
 				</div>

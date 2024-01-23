@@ -17,20 +17,20 @@ const SkillText = () => {
 				className="Welcome-box p-[1.2rem] mb-[1.5rem] border border-[#7042f88b] opacity-[0.9]">
 				<PowerIcon className="text-[#b49bff] mr-[1rem] h-[2rem] w-[2rem]" />
 				<h1 className="Welcome-text text-[1.6rem]">
-					Check my development skills!
+					Veja minha stack de desenvolvimento!
 				</h1>
 			</motion.div>
 			<motion.div
 				variants={slideInFromLeft(0.5)}
 				className="text-[3rem] text-white font-bold mt-[1rem] text-center mb-[1.5rem]">
 				<span className="colorful-span">
-					Making apps with modern technologies
+					Criando aplicativos com tecnologias modernas
 				</span>
 			</motion.div>
 			<motion.div
 				variants={slideInFromRight(0.5)}
 				className="cursive text-[2.4rem] text-gray-200 mb-[2.5rem] mt-[1rem] text-center">
-				And adapting to your team necessities
+				E me adaptando à necessidade de sua equipe
 			</motion.div>
 		</div>
 	);

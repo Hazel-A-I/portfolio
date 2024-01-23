@@ -79,6 +79,7 @@ const ProjectModal = ({
 					<div className="w-full h-full max-w-[36rem] max-h-[24rem] my-[2rem] rounded-[0.8rem] overflow-hidden">
 						<video loop autoPlay muted className=" object-fill h-full w-full">
 							<source src={videoSrc} type="video/mp4" />
+							Your browser does not support the video tag.
 						</video>
 					</div>
 
@@ -94,22 +95,21 @@ const ProjectModal = ({
 						href={link_repo}
 						target="_blank"
 						className="p-[0.8rem] text-[1rem] tracking-[0.1rem] button-primary text-center text-cyan-100  cursor-pointer rounded-[0.8rem] max-w-[24rem] border border-[#7042f88b] opacity-[0.9]">
-						Check <span className="font-extrabold">{name}&apos;s</span>{" "}
-						repository{" "}
+						Veja o repositório do <span className="font-extrabold">{name}</span>{" "}
 					</a>
 					{link_host && (
 						<a
 							href={link_host}
 							target="_blank"
 							className="p-[0.8rem] text-[1rem] tracking-[0.1rem] button-primary text-center text-cyan-100  cursor-pointer rounded-[0.8rem] max-w-[24rem] border border-[#7042f88b] opacity-[0.9]">
-							Check <span className="font-extrabold">{name}&apos;s</span> site{" "}
+							Veja o site do <span className="font-extrabold">{name}</span>{" "}
 						</a>
 					)}
 				</div>
 				<button
 					onClick={handleClose}
 					className="rounded-full bg-[#7971a841] w-[5rem] h-[3.2rem] border border-[#2a0e61] select-none text-[1rem] absolute top-[2rem] right-[2rem] hover:bg-[#4f496e41] active:bg-[#03001417] cursor-pointer z-[1002]">
-					Close
+					Fechar
 				</button>
 			</article>
 		</div>

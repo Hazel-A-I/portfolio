@@ -51,19 +51,18 @@ const ProjectCard = ({
 			<motion.div
 				variants={slideInFromTop}
 				custom={index}
-				className="flex flex-col grow basis-[36rem] items-center justify-between bg-[#03001417] backdrop-blur-lg border border-[#2a0e61] rounded-[0.8rem] z-50 h-[16rem] cursor-pointer"
+				className="flex flex-col grow basis-[36rem] items-center justify-between bg-[#03001417] backdrop-blur-lg border border-[#2a0e61] rounded-[0.8rem] z-50 h-[20rem] cursor-pointer"
 				onClick={handleToggleModal}>
-				<div className="overflow-hidden w-full h-[70%] flex rounded-t-lg shadow-sm border border-[#2a0e61]">
+				<div className="overflow-hidden w-full h-[80%] flex rounded-t-lg shadow-sm border border-[#2a0e61]">
 					<Image
 						src={background_image}
 						alt={name}
 						width={width}
 						height={height}
-						objectFit="fill"
-						className="select-none w-full"
+						className="select-none w-full object-fill"
 					/>
 				</div>
-				<div></div>
+				<div className="h-[20%] flex items-center text-[1.4rem]">{name}</div>
 			</motion.div>
 			{isModalOpen && renderModal()}
 		</>
