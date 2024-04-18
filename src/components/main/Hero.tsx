@@ -1,11 +1,12 @@
 /** @format */
 import React from "react";
 import HeroContent from "../sub/HeroContent";
+import "@/styles/component_styles/Hero.scss";
 const Hero = () => {
 	return (
-		<div id="about-me" className="relative flex flex-col h-full w-full">
+		<section id="about-me" className="section-hero">
 			<HeroContent />
-		</div>
+		</section>
 	);
 };
 

@@ -140,11 +140,6 @@ export const Socials = [
 		src: "/linkedin.svg",
 		link: "https://www.linkedin.com/in/hazel-arcangelo/",
 	},
-	{
-		name: "Instagram",
-		src: "/instagram.svg",
-		link: "https://www.instagram.com/hazel_arcangelo/",
-	},
 ];
 
 export const Project_data = [

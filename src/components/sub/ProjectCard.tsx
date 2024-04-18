@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { slideInFromTop } from "@/utils/motion";
 import ProjectModal from "./ProjectModal";
+import "@/styles/component_styles/Projects.scss";
 
 interface Props {
 	name: string;
@@ -14,7 +15,7 @@ interface Props {
 	width: number;
 	height: number;
 	index: number;
-	video_source: string;
+	video_source?: string | null | undefined;
 }
 
 const ProjectCard = ({
@@ -39,6 +40,7 @@ const ProjectCard = ({
 			isOpen={isModalOpen}
 			handleClose={handleToggleModal}
 			videoSrc={video_source}
+			imageSrc={background_image}
 			name={name}
 			description={description}
 			link_repo={link_repo}
@@ -51,9 +53,9 @@ const ProjectCard = ({
 			<motion.div
 				variants={slideInFromTop}
 				custom={index}
-				className="flex flex-col grow basis-[36rem] items-center justify-between bg-[#03001417] backdrop-blur-lg border border-[#2a0e61] rounded-[0.8rem] z-50 h-[20rem] cursor-pointer"
+				className="project-card backdrop-blur-lg"
 				onClick={handleToggleModal}>
-				<div className="overflow-hidden w-full h-[80%] flex rounded-t-lg shadow-sm border border-[#2a0e61]">
+				<div className="project-image">
 					<Image
 						src={background_image}
 						alt={name}
@@ -62,7 +64,7 @@ const ProjectCard = ({
 						className="select-none w-full object-fill"
 					/>
 				</div>
-				<div className="h-[20%] flex items-center text-[1.4rem]">{name}</div>
+				<div className="project-name">{name}</div>
 			</motion.div>
 			{isModalOpen && renderModal()}
 		</>
