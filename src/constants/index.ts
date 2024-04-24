@@ -146,37 +146,31 @@ export const Project_data = [
 	{
 		name: "Portfólio",
 		description:
-			"Esse portfólio foi um aprendizado e tanto, decidi usar Next.js e ",
-		background_image:
-			"/depositphotos_31468817-stock-photo-coming-soon-sign.jpg",
-		link_repo: "#",
+			"O atual portfólio que você está visualizando. Decidi utilizar Next.js para o projeto em sua totalidade, Framer Motion para as animações do letreiro e das animações de deslizar quando você usa o scroll, e utilizei um modelo já calculado para criar as estrelas procedurais no fundo, também irei adicionar uma seção para listar os meus cursos realizados, por enquanto estou muito satisfeito com o resultado, demorei um tanto para fazê-lo pois tenho diversas coisas em mente, inclusive um projeto de fórum onde eu utilizei react e bootstrap.",
+		background_image: "/projects/portfolio-thumb.png",
+		link_repo: "https://github.com/Hazel-A-I/portfolio",
 		link_host: "#",
-		width: 40,
-		height: 40,
-		video_source: "/youtube_zb8d4edjbhA_720x720_h264.mp4",
+		width: 600,
+		height: 400,
 	},
 	{
-		name: "Project 2",
+		name: "Sistema CRUD + Auth Entrevista Ambisis",
 		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent laoreet massa non felis tempus convallis. Ut velit eros, imperdiet id suscipit accumsan, varius at sem. Aliquam nisl ligula, sagittis et odio in, dignissim tincidunt velit. Ut porttitor gravida faucibus. Maecenas quis urna sit amet diam lobortis egestas at vitae metus. In hac habitasse platea dictumst. Nam eget ipsum nec libero tincidunt eleifend. Morbi elementum lectus bibendum, mattis ipsum vel, condimentum nibh. Morbi ultrices, libero ac suscipit tincidunt, lorem nibh varius urna, id tempor nisl nunc id felis. Maecenas elementum leo in massa molestie pretium. Nulla facilisis sollicitudin eros, id interdum sapien cursus eu. Integer diam mi, scelerisque non porttitor ac, vestibulum vitae turpis.",
-		background_image:
-			"/depositphotos_31468817-stock-photo-coming-soon-sign.jpg",
-		link_repo: "#",
-		link_host: "#",
-		width: 40,
-		height: 40,
-		video_source: "/youtube_zb8d4edjbhA_720x720_h264.mp4",
+			"Sistema requisitado na entrevista da empresa Ambisis com o prazo de uma semana, uma empresa focada em sistema de gestão ambiental, foi um desafio muito prazeroso de ser feito, justamente por utilizar uma das minhas tecnologias favoritas, Flutter, e mesmo que infelizmente eu não tenha sido aceito na empresa, foi uma experiência primordial sendo minha primeira entrevista como programador. Foi utilizado Dart & Flutter como acima mencionado, Firebase para a autênticação e banco de dados, BLoC (Cubit) para gerência de estados da aplicação (atualizar os dados de forma mais eficiente, e permitindo um maior controle do tratamento de erros), GoRouter para agilizar o roteamento das páginas, e eu também planejei implementar uma maior segurança, sincronização offline com SQFLite e testes também, mas não tive o tempo necessário devido a minha inexperiência. Mas eu estou satisfeito com o resultado.",
+		background_image: "/projects/ambisis-thumb.png",
+		link_repo: "https://github.com/Hazel-A-I/ambisis_challenge",
+
+		width: 600,
+		height: 400,
+		video_source: "/projects/ambisis-video.mp4",
 	},
 	{
-		name: "Project 3",
-		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent laoreet massa non felis tempus convallis. Ut velit eros, imperdiet id suscipit accumsan, varius at sem. Aliquam nisl ligula, sagittis et odio in, dignissim tincidunt velit. Ut porttitor gravida faucibus. Maecenas quis urna sit amet diam lobortis egestas at vitae metus. In hac habitasse platea dictumst. Nam eget ipsum nec libero tincidunt eleifend. Morbi elementum lectus bibendum, mattis ipsum vel, condimentum nibh. Morbi ultrices, libero ac suscipit tincidunt, lorem nibh varius urna, id tempor nisl nunc id felis. Maecenas elementum leo in massa molestie pretium. Nulla facilisis sollicitudin eros, id interdum sapien cursus eu. Integer diam mi, scelerisque non porttitor ac, vestibulum vitae turpis.",
+		name: "API Entra21 C#",
+		description: "Em desenvolvimento!",
 		background_image:
 			"/depositphotos_31468817-stock-photo-coming-soon-sign.jpg",
 		link_repo: "#",
-		link_host: "#",
-		width: 40,
-		height: 40,
-		video_source: "/youtube_zb8d4edjbhA_720x720_h264.mp4",
+		width: 600,
+		height: 400,
 	},
 ];

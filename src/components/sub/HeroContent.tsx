@@ -41,7 +41,7 @@ const HeroContent = () => (
 			</motion.div>
 
 			<motion.p variants={slideInFromLeft(0.8)} className="secondary-text-hero">
-				Sou um desenvolvedor Front-end com experiência em{" "}
+				Sou um desenvolvedor com experiência em{" "}
 				<span className="colorful-span">Websites</span>,{" "}
 				<span className="colorful-span">Mobile apps</span>, e{" "}
 				<span className="colorful-span">Metodologias Ágeis</span>
@@ -68,12 +68,7 @@ const HeroContent = () => (
 		</div>
 
 		<motion.div variants={slideInFromRight(0.8)} className="right-area-hero">
-			<Image
-				src="/placeholder.png"
-				alt="placeholder for later three.js"
-				height={650}
-				width={650}
-			/>
+			<div className="blob-profile-pic"></div>
 		</motion.div>
 	</motion.div>
 );

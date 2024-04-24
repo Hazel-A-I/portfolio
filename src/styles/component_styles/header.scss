@@ -24,7 +24,11 @@
 				font-weight: 700;
 				font-size: 2.4rem;
 				margin-left: 1rem;
-				// responsive pls
+				.surname {
+					@media (max-width: 480px) {
+						display: none;
+					}
+				}
 			}
 		}
 		.shortcuts {
@@ -60,6 +64,9 @@
 						color: $zinc-500;
 					}
 				}
+			}
+			@media (max-width: 1080px) {
+				display: none;
 			}
 		}
 		.socials {

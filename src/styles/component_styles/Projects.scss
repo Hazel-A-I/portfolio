@@ -39,6 +39,10 @@
 			border-radius: 0.8rem;
 			border-width: 0.1rem;
 			border-color: $colors-purple;
+			transition: transform 0.3s;
+			&:hover {
+				transform: scale(0.95);
+			}
 			.project-image {
 				display: flex;
 				overflow: hidden;
@@ -70,6 +74,7 @@
 	border-radius: 0.8rem;
 	border-width: 0.1rem;
 	border-color: $colors-purple;
+
 	z-index: 1001; // do not touch (overlay's z-index is 1000)
 	.video-area {
 		display: flex;
@@ -92,10 +97,14 @@
 			border-color: $colors-light-purple;
 			border-width: 0.1rem;
 			overflow: hidden;
+			position: relative;
 			video {
 				object-fit: fill;
 				height: 100%;
 				width: 100%;
+			}
+			@media (max-width: 991px) {
+				margin: 0;
 			}
 		}
 		.project-commentary {
@@ -116,6 +125,8 @@
 				font-size: 2.4rem;
 				font-weight: 800;
 				max-width: 28rem;
+				line-height: 2rem;
+				margin-bottom: 1rem;
 			}
 		}
 	}
@@ -159,6 +170,24 @@
 		}
 		&:active {
 			background-color: rgba($colors-dark-purple, 0.66);
+		}
+	}
+	@media (max-width: 991px) {
+		max-height: 64rem;
+		margin: 0 1.5rem;
+		.video-area {
+			flex-direction: column;
+			padding-top: 3.2rem;
+			.project-commentary {
+				margin-right: 0;
+				max-width: 64rem;
+			}
+		}
+	}
+	@media (max-width: 480px) {
+		.links-area {
+			flex-direction: column;
+			max-height: 10rem;
 		}
 	}
 }

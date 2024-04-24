@@ -6,11 +6,11 @@ import Image from "next/image";
 interface ProjectModalProps {
 	isOpen: boolean;
 	handleClose: () => void;
-	videoSrc?: string | null | undefined;
 	imageSrc: string;
 	name: string;
 	description: string;
 	link_repo: string;
+	videoSrc?: string | null | undefined;
 	link_host?: string | null | undefined;
 }
 
@@ -77,13 +77,13 @@ const ProjectModal = ({
 			<article className="project-modal backdrop-blur-lg ">
 				<div className="video-area">
 					<div className="video-player">
-						{videoSrc ? ( // Check if videoSrc exists
+						{videoSrc ? ( // check if videoSrc exists
 							<video loop autoPlay muted>
 								<source src={videoSrc} type="video/mp4" />
 								Your browser does not support the video tag.
 							</video>
 						) : (
-							<Image src={imageSrc} alt="Fallback Image" />
+							<Image src={imageSrc} alt="Fallback Image" fill />
 						)}
 					</div>
 

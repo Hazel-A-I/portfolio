@@ -23,6 +23,10 @@
 			font-size: 3.6rem;
 			font-weight: 800;
 		}
+		transition: transform 0.3s;
+		&:hover {
+			transform: scale(1.1);
+		}
 	}
 	.contacts {
 		border-color: rgba($colors-light-purple, 0.33);
@@ -30,10 +34,17 @@
 		background-color: rgba($colors-dark-purple, 0.33);
 		padding: 1rem 2rem;
 		border-radius: 69420rem;
-		.contact-list {
-			display: flex;
-			flex-direction: row;
-			gap: 4rem;
+		display: flex;
+		flex-direction: row;
+		gap: 4rem;
+		.contact-list-item {
+			cursor: pointer;
+			position: relative;
+			height: 4rem;
+			width: 4rem;
+			&:hover {
+				animation: spin 0.6s ease-in-out;
+			}
 		}
 	}
 	.authory {

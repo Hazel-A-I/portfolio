@@ -12,7 +12,10 @@ const Header = () => {
 			<div className="grid-container header-content">
 				<a href="#about-me" className="name-area">
 					<span className="name-text colorful-span ">&lt;/&gt;</span>
-					<span className="name-text">Hazel Arcangelo</span>
+					<span className="name-text">
+						Hazel {""}
+						<span className="surname">Arcangelo</span>
+					</span>
 				</a>
 
 				<div className="shortcuts">
@@ -26,9 +29,9 @@ const Header = () => {
 						<a href="#projects" className="transition">
 							Projetos
 						</a>
-						<a href="#courses" className=" transition">
+						{/* <a href="#courses" className=" transition">
 							Cursos
-						</a>
+						</a> */}
 					</div>
 				</div>
 

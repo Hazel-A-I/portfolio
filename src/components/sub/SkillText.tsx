@@ -8,28 +8,27 @@ import {
 	slideInFromTop,
 } from "@/utils/motion";
 import { PowerIcon } from "@heroicons/react/16/solid";
+import "@/styles/component_styles/Skills.scss";
 
 const SkillText = () => {
 	return (
-		<div className="w-full h-auto flex flex-col items-center justify-center">
+		<div className="skill-text">
 			<motion.div
 				variants={slideInFromTop}
-				className="Welcome-box p-[1.2rem] mb-[1.5rem] border border-[#7042f88b] opacity-[0.9]">
-				<PowerIcon className="text-[#b49bff] mr-[1rem] h-[2rem] w-[2rem]" />
-				<h1 className="Welcome-text text-[1.6rem]">
+				className="Welcome-box stacks-message">
+				<PowerIcon className="power-icon" />
+				<h1 className="Welcome-text stacks-text">
 					Veja minha stack de desenvolvimento!
 				</h1>
 			</motion.div>
-			<motion.div
-				variants={slideInFromLeft(0.5)}
-				className="text-[3rem] text-white font-bold mt-[1rem] text-center mb-[1.5rem]">
+			<motion.div variants={slideInFromLeft(0.5)} className="skills-title">
 				<span className="colorful-span">
 					Criando aplicativos com tecnologias modernas
 				</span>
 			</motion.div>
 			<motion.div
 				variants={slideInFromRight(0.5)}
-				className="cursive text-[2.4rem] text-gray-200 mb-[2.5rem] mt-[1rem] text-center">
+				className="cursive skills-subtitle">
 				E me adaptando à necessidade de sua equipe
 			</motion.div>
 		</div>
