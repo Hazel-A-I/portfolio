@@ -146,7 +146,7 @@ export const Project_data = [
 	{
 		name: "Portfólio",
 		description:
-			"O atual portfólio que você está visualizando. Decidi utilizar Next.js para o projeto em sua totalidade, Framer Motion para as animações do letreiro e das animações de deslizar quando você usa o scroll, e utilizei um modelo já calculado para criar as estrelas procedurais no fundo, também irei adicionar uma seção para listar os meus cursos realizados, por enquanto estou muito satisfeito com o resultado, demorei um tanto para fazê-lo pois tenho diversas coisas em mente, inclusive um projeto de fórum onde eu utilizei react e bootstrap.",
+			"O atual portfólio que você está visualizando. Decidi utilizar Next.js para o projeto em sua totalidade, Framer Motion para as animações do letreiro e das animações de deslizar quando você usa o scroll. também irei adicionar uma seção para listar os meus cursos realizados, por enquanto estou muito satisfeito com o resultado, demorei um tanto para fazê-lo pois tenho diversas coisas em mente, inclusive um projeto de fórum onde eu utilizei react e bootstrap.",
 		background_image: "/projects/portfolio-thumb.png",
 		link_repo: "https://github.com/Hazel-A-I/portfolio",
 		link_host: "#",
