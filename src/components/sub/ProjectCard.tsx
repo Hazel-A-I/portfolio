@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { slideInFromTop } from "@/utils/motion";
 import ProjectModal from "./ProjectModal";
-import "@/styles/component_styles/Projects.scss";
+import "../../styles/component_styles/Projects.scss";
 
 interface Props {
 	name: string;

@@ -1,8 +1,8 @@
 /** @format */
-import "@/styles/component_styles/home.scss";
-import Projects from "@/components/main/Projects";
-import Hero from "@/components/main/Hero";
-import Skills from "@/components/main/Skills";
+import ".././styles/component_styles/home.scss";
+import Projects from ".././components/main/Projects";
+import Hero from ".././components/main/Hero";
+import Skills from ".././components/main/Skills";
 // import Courses from "@/components/main/Courses";
 
 // import Image from "next/image";

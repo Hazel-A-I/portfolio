@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectCard from "../sub/ProjectCard";
-import "@/styles/component_styles/Projects.scss";
-import { Project_data } from "@/constants";
+import "../../styles/component_styles/Projects.scss";
+import { Project_data } from "../../constants";
 
 const Projects = () => {
 	return (

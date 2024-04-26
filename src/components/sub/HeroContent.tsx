@@ -7,11 +7,11 @@ import {
 	slideInFromLeft,
 	slideInFromRight,
 	slideInFromTop,
-} from "@/utils/motion";
-import "@/styles/general_styles/span.scss";
+} from "../../utils/motion";
+import "../../styles/general_styles/span.scss";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
-import "@/styles/component_styles/Hero.scss";
+import "../../styles/component_styles/Hero.scss";
 
 const HeroContent = () => (
 	<motion.div initial="hidden" animate="visible" className="hero-content">

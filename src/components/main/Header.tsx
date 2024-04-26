@@ -1,8 +1,8 @@
 /** @format */
 
-import "@/styles/component_styles/Header.scss";
-import "@/styles/general_styles/gridContainer.scss";
-import { Socials } from "@/constants";
+import "../../styles/component_styles/Header.scss";
+import "../../styles/general_styles/gridContainer.scss";
+import { Socials } from "../../constants";
 import Image from "next/image";
 import React from "react";
 

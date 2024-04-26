@@ -3,9 +3,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.scss";
-import StarCanvas from "@/components/main/StarBackground";
-import Header from "@/components/main/Header";
-import Footer from "@/components/main/Footer";
+import Header from ".././components/main/Header";
+import Footer from ".././components/main/Footer";
 const Inter = localFont({
 	src: "./InterVariable.woff2",
 	display: "swap",
@@ -25,7 +24,6 @@ export default function RootLayout({
 		<html lang="en">
 			<body className={`${Inter.className} bg-[#030014]`}>
 				<Header />
-				<StarCanvas />
 				{children}
 
 				<Footer />

@@ -1,7 +1,7 @@
 import React from "react";
 import Contacts from "../sub/Contacts";
 import Image from "next/image";
-import "@/styles/component_styles/Footer.scss";
+import "../../styles/component_styles/Footer.scss";
 
 const Footer = () => {
 	return (

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-import "@/styles/component_styles/Footer.scss";
+import "../../styles/component_styles/Footer.scss";
 const Contacts = () => {
 	return (
 		<div className="contacts">

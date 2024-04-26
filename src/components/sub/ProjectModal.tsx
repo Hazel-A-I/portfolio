@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useRef } from "react";
-import "@/styles/general_styles/overlay.scss";
-import "@/styles/component_styles/Projects.scss";
+import "../../styles/general_styles/overlay.scss";
+import "../../styles/component_styles/Projects.scss";
 import Image from "next/image";
 
 interface ProjectModalProps {

@@ -6,9 +6,9 @@ import {
 	slideInFromLeft,
 	slideInFromRight,
 	slideInFromTop,
-} from "@/utils/motion";
+} from "../../utils/motion";
 import { PowerIcon } from "@heroicons/react/16/solid";
-import "@/styles/component_styles/Skills.scss";
+import "../../styles/component_styles/Skills.scss";
 
 const SkillText = () => {
 	return (

@@ -1,10 +1,10 @@
 /** @format */
 
-import { Skill_data } from "@/constants";
+import { Skill_data } from "../../constants";
 import React from "react";
 import SkillDataProvider from "../sub/SkillDataProvider";
 import SkillText from "../sub/SkillText";
-import "@/styles/component_styles/Skills.scss";
+import "../../styles/component_styles/Skills.scss";
 
 const Skills = () => {
 	return (
