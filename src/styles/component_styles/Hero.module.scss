@@ -1,4 +1,5 @@
-@import "../general_styles/variables";
+@use "../general_styles/variables" as *;
+
 .section-hero {
 	position: relative;
 	display: flex;

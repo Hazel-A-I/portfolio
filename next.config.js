@@ -3,16 +3,20 @@
  * @type {import('next').NextConfig}
  */
 
-const path = require("path");
+import { dirname, join, resolve } from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const nextConfig = {
 	sassOptions: {
-		includePaths: [path.join(__dirname, "styles")],
+		includePaths: [join(__dirname, "styles")],
 	},
 	webpack: (config, { isServer }) => {
 		if (!isServer) {
 			config.resolve.alias = {
-				"@": path.resolve(__dirname, "src"),
+				"@": resolve(__dirname, "src"),
 			};
 		}
 
@@ -20,4 +24,4 @@ const nextConfig = {
 	},
 };
 
-module.exports = nextConfig;
+export default nextConfig;

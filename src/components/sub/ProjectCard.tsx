@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { slideInFromTop } from "@/utils/motion";
 import ProjectModal from "./ProjectModal";
-import "../../styles/component_styles/Projects.scss";
+import styles from "../../styles/component_styles/Projects.module.scss";
 
 interface Props {
 	name: string;
@@ -53,20 +53,20 @@ const ProjectCard = ({
 			<motion.div
 				variants={slideInFromTop}
 				custom={index}
-				className="project-card backdrop-blur-lg"
+				className={`${styles["project-card"]} backdrop-blur-lg`}
 				onClick={handleToggleModal}>
-				<div className="project-image">
+				<div className={styles["project-image"]}>
 					<Image
 						src={background_image}
 						alt={name}
 						width={width}
 						height={height}
-						className="select-none w-full object-fill"
+						className={`select-none w-full object-fill`}
 					/>
 				</div>
-				<div className="project-name">{name}</div>
+				<div className={styles["project-name"]}>{name}</div>
 			</motion.div>
-			{isModalOpen && renderModal()}
+			{isModalOpen ? renderModal() : null}
 		</>
 	);
 };

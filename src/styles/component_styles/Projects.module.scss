@@ -1,4 +1,4 @@
-@import "../general_styles/variables";
+@use "../general_styles/variables" as *;
 .section-projects {
 	display: flex;
 	flex-direction: column;

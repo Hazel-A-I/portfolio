@@ -1,5 +1,5 @@
 /** @format */
-import ".././styles/component_styles/home.scss";
+import styles from ".././styles/component_styles/Home.module.scss";
 import Projects from ".././components/main/Projects";
 import Hero from ".././components/main/Hero";
 import Skills from ".././components/main/Skills";
@@ -9,8 +9,8 @@ import Skills from ".././components/main/Skills";
 
 export default function Home() {
 	return (
-		<main className="grid-home">
-			<div className="section-division">
+		<main className={styles["grid-home"]}>
+			<div className={styles["section-division"]}>
 				<Hero />
 				<Skills />
 				<Projects />

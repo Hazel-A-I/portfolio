@@ -8,27 +8,29 @@ import {
 	slideInFromTop,
 } from "../../utils/motion";
 import { PowerIcon } from "@heroicons/react/16/solid";
-import "../../styles/component_styles/Skills.scss";
+import styles from "../../styles/component_styles/Skills.module.scss";
 
 const SkillText = () => {
 	return (
-		<div className="skill-text">
+		<div className={styles["skill-text"]}>
 			<motion.div
 				variants={slideInFromTop}
-				className="Welcome-box stacks-message">
-				<PowerIcon className="power-icon" />
-				<h1 className="Welcome-text stacks-text">
+				className={`${styles["Welcome-box"]} ${styles["stacks-message"]}`}>
+				<PowerIcon className={styles["power-icon"]} />
+				<h1 className={`${styles["Welcome-box"]} ${styles["stacks-text"]}`}>
 					Veja minha stack de desenvolvimento!
 				</h1>
 			</motion.div>
-			<motion.div variants={slideInFromLeft(0.5)} className="skills-title">
-				<span className="colorful-span">
+			<motion.div
+				variants={slideInFromLeft(0.5)}
+				className={styles["skills-title"]}>
+				<span className={styles["colorful-span"]}>
 					Criando aplicativos com tecnologias modernas
 				</span>
 			</motion.div>
 			<motion.div
 				variants={slideInFromRight(0.5)}
-				className="cursive skills-subtitle">
+				className={styles["skills-subtitle"]}>
 				E me adaptando à necessidade de sua equipe
 			</motion.div>
 		</div>

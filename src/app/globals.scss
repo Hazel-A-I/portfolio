@@ -6,6 +6,24 @@
 html {
 	font-size: 62.5%;
 	color: aliceblue;
+	scroll-behavior: smooth;
+	position: relative;
+	::-webkit-scrollbar {
+		width: 1rem;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background-color: rgba(255, 255, 255, 0.1);
+		border-radius: 6px;
+	}
+
+	::-webkit-scrollbar-track {
+		background-color: transparent;
+	}
 }
 
 html,
@@ -79,25 +97,19 @@ body {
 	display: none;
 }
 
-html {
-	scroll-behavior: smooth;
-	position: relative;
-	::-webkit-scrollbar {
-		width: 1rem;
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-	}
+.grid-container {
+	width: 100%;
+	max-width: 144rem;
+}
 
-	::-webkit-scrollbar-thumb {
-		background-color: rgba(255, 255, 255, 0.1);
-		border-radius: 6px;
-	}
-
-	::-webkit-scrollbar-track {
-		background-color: transparent;
-	}
+.colorful-span {
+	color: transparent;
+	background-clip: text;
+	background-image: linear-gradient(to right, var(--tw-gradient-stops));
+	--tw-gradient-from: #aa5573 var(--tw-gradient-from-position);
+	--tw-gradient-to: rgb(168 85 247 / 0) var(--tw-gradient-to-position);
+	--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+	--tw-gradient-to: #9306d4 var(--tw-gradient-to-position);
 }
 
 .cursive {

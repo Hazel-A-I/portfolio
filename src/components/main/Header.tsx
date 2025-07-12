@@ -1,52 +1,60 @@
 /** @format */
 
-import "../../styles/component_styles/Header.scss";
-import "../../styles/general_styles/gridContainer.scss";
+import styles from "../../styles/component_styles/Header.module.scss";
+import gridStyle from "../../styles/general_styles/_gridContainer.module.scss";
+import spanStyle from "../../styles/general_styles/_span.module.scss";
 import { Socials } from "../../constants";
 import Image from "next/image";
 import React from "react";
 
 const Header = () => {
 	return (
-		<header className="header shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md">
-			<div className="grid-container header-content">
-				<a href="#about-me" className="name-area">
-					<span className="name-text colorful-span ">&lt;/&gt;</span>
-					<span className="name-text">
+		<header
+			className={`${styles["header"]} shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md`}>
+			<div
+				className={
+					gridStyle["grid-container"] + " " + styles["header-content"]
+				}>
+				<a href="#about-me" className={styles["name-area"]}>
+					<span
+						className={styles["name-text"] + " " + spanStyle["colorful-span"]}>
+						&lt;/&gt;
+					</span>
+					<span className={styles["name-text"]}>
 						Hazel {""}
-						<span className="surname">Arcangelo</span>
+						<span className={styles.surname}>Arcangelo</span>
 					</span>
 				</a>
 
-				<div className="shortcuts">
-					<div className="shortcut-list">
-						<a href="#about-me" className="transition">
+				<div className={styles.shortcuts}>
+					<div className={styles["shortcut-list"]}>
+						<a href="#about-me" className={styles.transition}>
 							Sobre mim
 						</a>
-						<a href="#skills" className="transition">
+						<a href="#skills" className={styles.transition}>
 							Competências
 						</a>
-						<a href="#projects" className="transition">
+						<a href="#projects" className={styles.transition}>
 							Projetos
 						</a>
-						{/* <a href="#courses" className=" transition">
+						{/* <a href="#courses" className={styles.transition}>
 							Cursos
 						</a> */}
 					</div>
 				</div>
 
-				<div className="socials">
+				<div className={styles.socials}>
 					{Socials.map((social) => (
 						<a
 							key={social.name}
 							href={social.link}
 							target="_blank"
-							className="social-image">
+							className={`${styles["social-image"]}`}>
 							<Image
 								src={social.src}
 								alt={social.name}
 								fill
-								className="grayscale-filter"
+								className={`${styles["graycale-filter"]}`}
 							/>
 						</a>
 					))}

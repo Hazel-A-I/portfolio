@@ -1,4 +1,4 @@
-@import "../general_styles/variables";
+@use "../general_styles/variables" as *;
 
 .section-skills {
 	display: flex;
@@ -19,7 +19,9 @@
 		.stacks-message {
 			padding: 1.2rem;
 			margin-bottom: 1.5rem;
+			display: flex;
 			border-width: 0.1rem;
+			border-radius: 69rem;
 			border-color: rgba($colors-light-purple, 0.55);
 			opacity: 0.9;
 			.power-icon {

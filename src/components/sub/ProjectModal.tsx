@@ -1,9 +1,9 @@
 import React, { useCallback, useEffect, useRef } from "react";
-import "../../styles/general_styles/overlay.scss";
-import "../../styles/component_styles/Projects.scss";
+import modalStyles from "../../styles/general_styles/_overlay.module.scss";
+import styles from "../../styles/component_styles/Projects.module.scss";
 import Image from "next/image";
 
-interface ProjectModalProps {
+type ProjectModalProps = {
 	isOpen: boolean;
 	handleClose: () => void;
 	imageSrc: string;
@@ -12,7 +12,7 @@ interface ProjectModalProps {
 	link_repo: string;
 	videoSrc?: string | null | undefined;
 	link_host?: string | null | undefined;
-}
+};
 
 const ProjectModal = ({
 	isOpen,
@@ -73,10 +73,12 @@ const ProjectModal = ({
 	if (!isOpen) return null;
 
 	return (
-		<div ref={overlayRef} className={`modal-overlay ${isOpen ? "active" : ""}`}>
-			<article className="project-modal backdrop-blur-lg ">
-				<div className="video-area">
-					<div className="video-player">
+		<div
+			ref={overlayRef}
+			className={`${modalStyles["modal-overlay"]} ${isOpen ? "active" : ""}`}>
+			<article className={styles["project-modal"] + " backdrop-blur-lg"}>
+				<div className={styles["video-area"]}>
+					<div className={styles["video-player"]}>
 						{videoSrc ? ( // check if videoSrc exists
 							<video loop autoPlay muted>
 								<source src={videoSrc} type="video/mp4" />
@@ -87,28 +89,28 @@ const ProjectModal = ({
 						)}
 					</div>
 
-					<aside className="project-commentary backdrop-blur-lg">
-						<h2 className="colorful-span">{name}</h2>
+					<aside className={styles["project-commentary"] + " backdrop-blur-lg"}>
+						<h2 className={styles["colorful-span"]}>{name}</h2>
 						<p>{description}</p>
 					</aside>
 				</div>
-				<div className="links-area">
+				<div className={styles["links-area"]}>
 					<a
 						href={link_repo}
 						target="_blank"
-						className="button-primary button-link">
+						className={`${styles["button-primary"]} ${styles["button-link"]}`}>
 						Veja o repositório do <span className="font-extrabold">{name}</span>{" "}
 					</a>
 					{link_host && (
 						<a
 							href={link_host}
 							target="_blank"
-							className="button-primary button-link">
+							className={`${styles["button-primary"]} ${styles["button-link"]}`}>
 							Veja o site do <span className="font-extrabold">{name}</span>{" "}
 						</a>
 					)}
 				</div>
-				<button onClick={handleClose} className="close-modal-button">
+				<button onClick={handleClose} className={styles["close-modal-button"]}>
 					Fechar
 				</button>
 			</article>
