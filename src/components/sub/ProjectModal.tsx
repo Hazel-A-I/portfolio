@@ -75,7 +75,9 @@ const ProjectModal = ({
 	return (
 		<div
 			ref={overlayRef}
-			className={`${modalStyles["modal-overlay"]} ${isOpen ? "active" : ""}`}>
+			className={`${modalStyles["modal-overlay"]} ${
+				isOpen ? modalStyles["active"] : ""
+			}`}>
 			<article className={styles["project-modal"] + " backdrop-blur-lg"}>
 				<div className={styles["video-area"]}>
 					<div className={styles["video-player"]}>
