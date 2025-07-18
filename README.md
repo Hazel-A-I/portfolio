@@ -7,3 +7,5 @@ Portfólio pessoal _WIP_
 ### - Internacionalização
 
 ### - Atualizar projetos e competências
+
+-> Vercel/Netlify - Deploy e atualização de portfólio/redes
