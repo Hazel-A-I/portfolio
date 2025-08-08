@@ -1,0 +1,9 @@
+.colorful-span {
+	color: transparent;
+	background-clip: text;
+	background-image: linear-gradient(to right, var(--tw-gradient-stops));
+	--tw-gradient-from: #aa5573 var(--tw-gradient-from-position);
+	--tw-gradient-to: rgb(168 85 247 / 0) var(--tw-gradient-to-position);
+	--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+	--tw-gradient-to: #9306d4 var(--tw-gradient-to-position);
+}
